@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية — Delibox</title>
+  <meta name="description" content="سياسة الخصوصية لتطبيق Delibox" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14201a;
+      --muted: #4a5c52;
+      --line: #d7e2db;
+      --paper: #f3f7f4;
+      --card: #ffffff;
+      --brand: #1f7a4d;
+      --brand-deep: #0f4d31;
+      --accent: #e8f5ee;
+      --warn: #8a5a00;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "IBM Plex Sans Arabic", sans-serif;
+      background:
+        radial-gradient(1200px 500px at 100% -10%, #d9f0e3 0%, transparent 55%),
+        radial-gradient(900px 420px at -10% 20%, #e7efe9 0%, transparent 50%),
+        linear-gradient(180deg, #eef5f0 0%, var(--paper) 35%, #eef3f0 100%);
+      line-height: 1.85;
+    }
+
+    .wrap {
+      width: min(860px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header {
+      padding: 1.5rem 0 2rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 2rem;
+    }
+
+    .brand {
+      font-family: Syne, "IBM Plex Sans Arabic", sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      letter-spacing: -0.03em;
+      color: var(--brand-deep);
+      margin: 0 0 0.35rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      color: var(--brand);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .lang {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .lang button {
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 0.4rem 0.95rem;
+      font: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .lang button[aria-pressed="true"] {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    section {
+      background: color-mix(in srgb, var(--card) 88%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.25rem 1.35rem;
+      margin: 0 0 1rem;
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      margin: 0 0 0.65rem;
+      font-size: 1.15rem;
+      color: var(--brand-deep);
+    }
+
+    p, li { color: var(--ink); }
+    p { margin: 0 0 0.7rem; }
+    ul { margin: 0.2rem 0 0.4rem; padding-inline-start: 1.25rem; }
+    li { margin: 0.25rem 0; }
+
+    .note {
+      background: var(--accent);
+      border-color: color-mix(in srgb, var(--brand) 25%, var(--line));
+    }
+
+    a { color: var(--brand-deep); font-weight: 600; }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    [hidden] { display: none !important; }
+
+    html[lang="en"] body { direction: ltr; text-align: left; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow" data-i18n="eyebrow">تطبيق التوصيل</p>
+      <p class="brand">Delibox</p>
+      <h1 data-i18n="title">سياسة الخصوصية</h1>
+      <p class="meta" data-i18n="meta">آخر تحديث: 16 نوفمبر 2026 · رقم الحزمة: com.app.deli_box</p>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="btn-ar" aria-pressed="true">العربية</button>
+        <button type="button" id="btn-en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <main id="content-ar">
+      <section class="note">
+        <p>تحترم Delibox خصوصيتك. توضّح هذه السياسة كيف نجمع البيانات ونستخدمها ونحميها عند استخدام تطبيق Delibox على أندرويد.</p>
+      </section>
+
+      <section>
+        <h2>1. من نحن</h2>
+        <p>Delibox هو تطبيق لطلب وتوصيل المنتجات من المتاجر. عند استخدامك للتطبيق، قد نعالج بيانات لازمة لتقديم الخدمة مثل الحساب والطلبات والعناوين.</p>
+      </section>
+
+      <section>
+        <h2>2. البيانات التي نجمعها</h2>
+        <ul>
+          <li><strong>بيانات الحساب:</strong> مثل الاسم، رقم الهاتف، وبيانات تسجيل الدخول، ورمز المصادقة (Token).</li>
+          <li><strong>بيانات الطلبات والسلة:</strong> المنتجات المختارة، تفاصيل الطلب، وحالة الطلب.</li>
+          <li><strong>العناوين والموقع:</strong> العناوين المحفوظة، والمدينة/المنطقة، وإحداثيات الموقع عند اختيار عنوان عبر الخريطة (بإذنك).</li>
+          <li><strong>الصور:</strong> الصور التي تختارها من الكاميرا أو المعرض عند إنشاء طلب مخصص (بإذنك).</li>
+          <li><strong>بيانات الجهاز والاستخدام:</strong> معلومات تقنية أساسية لتشغيل التطبيق وتحسين الاستقرار (مثل حالة الجلسة والإشعارات الفورية).</li>
+          <li><strong>التفضيلات المحلية:</strong> بيانات مخزّنة على جهازك مثل رمز الدخول ومعرّف المستخدم عبر SharedPreferences.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. أذونات التطبيق</h2>
+        <ul>
+          <li><strong>الموقع:</strong> لتحديد عنوان التوصيل بدقة عبر الخريطة.</li>
+          <li><strong>الكاميرا / الصور:</strong> لإرفاق صور مع الطلبات المخصصة.</li>
+          <li><strong>الإنترنت:</strong> للاتصال بالخادم ومزامنة الحساب والطلبات والإشعارات.</li>
+        </ul>
+        <p>يمكنك رفض أو سحب هذه الأذونات من إعدادات الجهاز، وقد تتأثر بعض الميزات بذلك.</p>
+      </section>
+
+      <section>
+        <h2>4. كيف نستخدم بياناتك</h2>
+        <ul>
+          <li>إنشاء وإدارة حسابك وتسجيل الدخول.</li>
+          <li>معالجة الطلبات والدفع/التنفيذ حسب الخدمة المتاحة.</li>
+          <li>حفظ وإدارة عناوين التوصيل.</li>
+          <li>إرسال إشعارات متعلقة بالطلبات والحساب.</li>
+          <li>تحسين أداء التطبيق ومعالجة الأعطال ومنع الاستخدام غير المشروع.</li>
+        </ul>
+        <p>لا نبيع بياناتك الشخصية لأطراف ثالثة.</p>
+      </section>
+
+      <section>
+        <h2>5. الجهات الخارجية</h2>
+        <p>قد نعتمد على مزوّدي خدمات للمساعدة في تشغيل التطبيق، مثل:</p>
+        <ul>
+          <li>خوادم الواجهة الخلفية لمعالجة الحسابات والطلبات.</li>
+          <li>خدمات الخرائط (مثل Google Maps / OpenStreetMap) لعرض وتحديد الموقع.</li>
+          <li>خدمات الإشعارات الفورية/القنوات اللحظية.</li>
+          <li>متجر Google Play لتوزيع التطبيق.</li>
+        </ul>
+        <p>تخضع هذه الجهات لسياسات الخصوصية الخاصة بها.</p>
+      </section>
+
+      <section>
+        <h2>6. التخزين والأمان</h2>
+        <p>نحتفظ بالبيانات طالما كان ذلك ضروريًا لتقديم الخدمة أو للالتزام بالمتطلبات النظامية. نستخدم إجراءات تقنية وتنظيمية معقولة لحماية البيانات، بما في ذلك نقل المصادقة عبر رمز آمن قدر الإمكان. ومع ذلك، لا يمكن ضمان أمان مطلق عبر الإنترنت.</p>
+      </section>
+
+      <section>
+        <h2>7. حقوقك</h2>
+        <ul>
+          <li>طلب الاطلاع على بياناتك أو تصحيحها أو حذفها عند الإمكان.</li>
+          <li>إلغاء تفعيل الأذونات من إعدادات الجهاز.</li>
+          <li>حذف التطبيق وإيقاف جمع البيانات عبر التطبيق.</li>
+        </ul>
+        <p>للتواصل بشأن الخصوصية، راسلنا على: <a href="mailto:mariammohamedsabet@gmail.com">mariammohamedsabet@gmail.com</a></p>
+      </section>
+
+      <section>
+        <h2>8. خصوصية الأطفال</h2>
+        <p>التطبيق غير موجّه للأطفال دون سن 13 عامًا (أو السن الأدنى المطبق في بلدك). إذا علمنا بجمع بيانات طفل دون موافقة مناسبة، سنعمل على حذفها.</p>
+      </section>
+
+      <section>
+        <h2>9. التعديلات</h2>
+        <p>قد نحدّث هذه السياسة من وقت لآخر. سننشر النسخة المحدّثة على هذه الصفحة مع تاريخ التحديث. استمرار استخدام التطبيق بعد التحديث يعني موافقتك على السياسة المعدّلة.</p>
+      </section>
+
+      <section>
+        <h2>10. التواصل</h2>
+        <p>للاستفسارات حول سياسة الخصوصية أو بياناتك:</p>
+        <p>البريد: <a href="mailto:privacy@delibox.app">privacy@delibox.app</a><br />
+        التطبيق: Delibox · الحزمة: com.app.deli_box</p>
+      </section>
+    </main>
+
+    <main id="content-en" hidden>
+      <section class="note">
+        <p>Delibox respects your privacy. This policy explains how we collect, use, and protect information when you use the Delibox Android app.</p>
+      </section>
+
+      <section>
+        <h2>1. Who we are</h2>
+        <p>Delibox is a store ordering and delivery app. When you use the app, we may process data needed to provide the service, such as account, orders, and delivery addresses.</p>
+      </section>
+
+      <section>
+        <h2>2. Information we collect</h2>
+        <ul>
+          <li><strong>Account data:</strong> name, phone number, login credentials, and authentication token.</li>
+          <li><strong>Orders &amp; cart:</strong> selected products, order details, and order status.</li>
+          <li><strong>Addresses &amp; location:</strong> saved addresses, city/region, and map coordinates when you pick a delivery point (with your permission).</li>
+          <li><strong>Images:</strong> photos you choose from camera or gallery for custom orders (with your permission).</li>
+          <li><strong>Device &amp; usage data:</strong> basic technical data needed to run the app and notifications.</li>
+          <li><strong>Local preferences:</strong> data stored on your device such as auth token and user id via SharedPreferences.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. App permissions</h2>
+        <ul>
+          <li><strong>Location:</strong> to set accurate delivery addresses on the map.</li>
+          <li><strong>Camera / photos:</strong> to attach images to custom orders.</li>
+          <li><strong>Internet:</strong> to connect to our servers for accounts, orders, and realtime notifications.</li>
+        </ul>
+        <p>You can deny or revoke permissions in device settings; some features may stop working.</p>
+      </section>
+
+      <section>
+        <h2>4. How we use your data</h2>
+        <ul>
+          <li>Create and manage your account and sign-in session.</li>
+          <li>Process orders and related fulfillment.</li>
+          <li>Save and manage delivery addresses.</li>
+          <li>Send order and account notifications.</li>
+          <li>Improve reliability, fix issues, and prevent abuse.</li>
+        </ul>
+        <p>We do not sell your personal data.</p>
+      </section>
+
+      <section>
+        <h2>5. Third parties</h2>
+        <p>We may use service providers to operate the app, including:</p>
+        <ul>
+          <li>Backend servers for accounts and orders.</li>
+          <li>Maps providers (such as Google Maps / OpenStreetMap).</li>
+          <li>Realtime / push notification services.</li>
+          <li>Google Play for app distribution.</li>
+        </ul>
+        <p>Those providers process data under their own privacy policies.</p>
+      </section>
+
+      <section>
+        <h2>6. Storage &amp; security</h2>
+        <p>We keep data only as long as needed to provide the service or meet legal requirements. We apply reasonable safeguards, including authenticated API access where applicable. No method of transmission over the internet is fully secure.</p>
+      </section>
+
+      <section>
+        <h2>7. Your rights</h2>
+        <ul>
+          <li>Request access, correction, or deletion of your data where applicable.</li>
+          <li>Revoke app permissions in device settings.</li>
+          <li>Uninstall the app to stop further collection through the app.</li>
+        </ul>
+        <p>Privacy requests: <a href="mailto:privacy@delibox.app">privacy@delibox.app</a></p>
+      </section>
+
+      <section>
+        <h2>8. Children’s privacy</h2>
+        <p>The app is not directed to children under 13 (or the minimum age required in your country). If we learn we collected a child’s data without proper consent, we will delete it.</p>
+      </section>
+
+      <section>
+        <h2>9. Changes</h2>
+        <p>We may update this policy from time to time. The latest version will be posted on this page with an updated date. Continued use of the app means you accept the revised policy.</p>
+      </section>
+
+      <section>
+        <h2>10. Contact</h2>
+        <p>Questions about this policy or your data:</p>
+        <p>Email: <a href="mailto:privacy@delibox.app">privacy@delibox.app</a><br />
+        App: Delibox · Package: com.app.deli_box</p>
+      </section>
+    </main>
+
+    <footer>
+      <p data-i18n="footer">© 2026 Delibox. جميع الحقوق محفوظة.</p>
+    </footer>
+  </div>
+
+  <script>
+    const ar = document.getElementById("content-ar");
+    const en = document.getElementById("content-en");
+    const btnAr = document.getElementById("btn-ar");
+    const btnEn = document.getElementById("btn-en");
+    const i18n = {
+      ar: {
+        eyebrow: "تطبيق التوصيل",
+        title: "سياسة الخصوصية",
+        meta: "آخر تحديث: 16 نوفمبر 2026 · رقم الحزمة: com.app.deli_box",
+        footer: "© 2026 Delibox. جميع الحقوق محفوظة.",
+      },
+      en: {
+        eyebrow: "Delivery app",
+        title: "Privacy Policy",
+        meta: "Last updated: November 16, 2026 · Package: com.app.deli_box",
+        footer: "© 2026 Delibox. All rights reserved.",
+      },
+    };
+
+    function setLang(lang) {
+      const isAr = lang === "ar";
+      document.documentElement.lang = lang;
+      document.documentElement.dir = isAr ? "rtl" : "ltr";
+      ar.hidden = !isAr;
+      en.hidden = isAr;
+      btnAr.setAttribute("aria-pressed", String(isAr));
+      btnEn.setAttribute("aria-pressed", String(!isAr));
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        el.textContent = i18n[lang][key];
+      });
+      document.title = isAr ? "سياسة الخصوصية — Delibox" : "Privacy Policy — Delibox";
+    }
+
+    btnAr.addEventListener("click", () => setLang("ar"));
+    btnEn.addEventListener("click", () => setLang("en"));
+  </script>
+</body>
+</html>
